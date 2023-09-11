@@ -76,7 +76,7 @@ background_genes <- read_tsv("counts_filetered_cpm.tsv") %>%
     as.vector()
 ```
 ## The gene set of interest
-Let's assume that I have a table that contains log2(fold change) values of genes and adjusted p-values for different genes called `comparison_6.tsv` (data is from Dadras et al. 2023)[https://www.nature.com/articles/s41477-023-01491-0]. We can calculate these tables based on RNA-Seq tables via edgeR, limma, DESeq2, etc. Please keep in mind that this is just an example. You can perform enrichment analysis with any kind of input data and it is not limited to RNA-Seq.
+Let's assume that I have a table that contains log2(fold change) values of genes and adjusted p-values for different genes called `comparison_6.tsv` (data is from Dadras et al. 2023)[https://doi.org/10.1038/s41477-023-01491-0]. We can calculate these tables based on RNA-Seq tables via edgeR, limma, DESeq2, etc. Please keep in mind that this is just an example. You can perform enrichment analysis with any kind of input data and it is not limited to RNA-Seq.
 Let's assume that I am only instersted in genes that have abosulte fold change of 2 or more with adjusted p-value of at least 0.05. Then, I can create the list of interesting genes via:
 ```
 # read the gene list of interest
