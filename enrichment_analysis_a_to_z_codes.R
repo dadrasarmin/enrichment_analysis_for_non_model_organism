@@ -146,7 +146,7 @@ if (any(enrichment_gsea@result$p.adjust <= 0.05)){
     p <- ridgeplot(enrichment_gsea,
                    core_enrichment= FALSE,
                    fill="p.adjust",
-                   orderBy = "x",
+                   orderBy = "NES",
                    showCategory=100) +
         ggtitle("Ridge plot for GSEA")
     
