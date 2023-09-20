@@ -45,6 +45,7 @@ colnames(eggNOG) <- c("term", "gene")
 ### Preparing Term to name table
 There are different ways to map a GO term to a GO term. I used core ontology from [gene ontology](https://geneontology.org/docs/download-ontology/) database. You can also look at different GO-term tables on different databases such as [OLS](https://www.ebi.ac.uk/ols/ontologies/go).
 ```
+library(ontologyIndex)
 # prepare the term to name table
 ontology <- get_ontology(file = "go.obo",
                          propagate_relationships = "is_a",
